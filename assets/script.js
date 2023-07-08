@@ -2,7 +2,10 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
-var currentDay = $('#currentDay');
+
+var today = dayjs();
+$('#currentDay').text(today.format('MMM D, YYYY'));
+
 
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
