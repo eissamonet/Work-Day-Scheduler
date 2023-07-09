@@ -2,9 +2,16 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
+var today = $('#currentDay');
 
-var today = dayjs();
-$('#currentDay').text(today.format('MMM D, YYYY'));
+
+// TODO: Add code to display the current date in the header of the page.
+var today = dayjs().format('dddd, MMM YYYY');
+var displayDate = document.getElementById('currentDay');
+displayDate.innerHTML = today;
+var currentHour = dayjs().format('HH');
+
+
 
 
 $(function () {
