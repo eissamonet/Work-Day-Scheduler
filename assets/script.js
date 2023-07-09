@@ -6,13 +6,29 @@ var today = $('#currentDay');
 
 
 // TODO: Add code to display the current date in the header of the page.
-var today = dayjs().format('dddd, MMM YYYY');
+var today = dayjs().format('dddd, MMMM D YYYY');
 var displayDate = document.getElementById('currentDay');
 displayDate.innerHTML = today;
 var currentHour = dayjs().format('HH');
 
 
 
+
+
+// TODO: Add code to apply the past, present, or future class to each time
+// block by comparing the id to the current hour.
+
+
+// TODO: Add a listener for click events on the save button. This code should
+// use the id in the containing time-block as a key to save the user input in
+// local storage.
+
+$('.saveBtn').click(function (event) {
+  event.preventDefault();
+  var value = $(this).siblings('.time-block').val();
+  var time = $(this).parent().attr('id').split('-')[1];
+  localStorage.setItem(time,value);
+});
 
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
