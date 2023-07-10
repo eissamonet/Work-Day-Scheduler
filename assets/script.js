@@ -42,25 +42,6 @@ $('.saveBtn').on('click', function (event) {
 });
 
 
-function readTextAreaFromStorage() {
-  var tasks = localStorage.getItem('tasks');
-  if (tasks) {
-    tasks = JSON.parse(tasks);
-  } else {
-    tasks = [];
-  }
-  return tasks;
-}
-
-function saveTextAreaToStorage(tasks) {
-  localStorage.setItem('tasks', JSON.stringify(tasks));
-}
-
-function printTextArea() {
-  projectDisplayEl.empty();
-
-var projects = readTextAreaFromStorage();
-}
 // TODO: Add code to get any user input that was saved in localStorage and set
 // the values of the corresponding textarea elements.
 $('#hour-09'.time-block).val(localStorage.getItem('09'));
