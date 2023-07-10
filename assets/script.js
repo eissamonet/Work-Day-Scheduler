@@ -30,18 +30,41 @@ $('.time-div').each(function () {
     $(this).addClass('past');
   }  
 });
+
+
+
 // TODO: Add a listener for click events on the save button. This code should
 // use the id in the containing time-block as a key to save the user input in
 // local storage.
 
-$('.saveBtn').click(function (event) {
+$('.saveBtn').on('click', function (event) {
   event.preventDefault();
   var value = $(this).siblings('.time-block').val();
   var time = $(this).parent().attr('id').split('-')[1];
   localStorage.setItem(time,value);
 });
 
- // TODO: Add code to get any user input that was saved in localStorage and set
+
+function readTextAreaFromStorage() {
+  var tasks = localStorage.getItem('tasks');
+  if (tasks) {
+    tasks = JSON.parse(tasks);
+  } else {
+    tasks = [];
+  }
+  return tasks;
+}
+
+function saveTextAreaToStorage(tasks) {
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+function printTextArea() {
+  projectDisplayEl.empty();
+
+var projects = readTextAreaFromStorage();
+}
+// TODO: Add code to get any user input that was saved in localStorage and set
 // the values of the corresponding textarea elements.
 
 $('#hour-09'.time-block).val(localStorage.getItem('09'));
@@ -55,10 +78,7 @@ $('#hour-16'.time-block).val(localStorage.getItem('16'));
 $('#hour-17'.time-block).val(localStorage.getItem('17'));
 
 
-$('clearInputBtn').click(function (event) {
-  event.preventDefault;
-  $('textArea').val('')
-  localStorage.clear();
+
 
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
@@ -78,4 +98,3 @@ $('clearInputBtn').click(function (event) {
   // attribute of each time-block be used to do this?
   //
   
-});
