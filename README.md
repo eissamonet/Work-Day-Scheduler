@@ -2,12 +2,12 @@
 
 ## Description
 
-
+The Work Day Scheduler allows a user to enter and save events for each hour of a typical working day (9am–5pm).
 
 
 ## Installation
 
-N/A
+The application will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. 
 
 ## Usage
 
@@ -28,7 +28,9 @@ N/A
 
 ## Credits
 
-
+[Day.js](https://day.js.org/en/)
+[jQuery](https://jquery.com/)
+[Bootstrap](https://getbootstrap.com/)
 
 ## License
 
