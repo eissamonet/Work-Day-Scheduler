@@ -38,9 +38,17 @@ The application will run in the browser and feature dynamically updated HTML and
 
 MIT License
 
-<img width="1440" alt="Screen Shot 2023-07-10 at 8 11 38 AM" src="https://github.com/eissamonet/Work-Day-Scheduler/assets/133728858/b21e0970-e1b7-4e5f-8a06-6e96feff6de4">
+- Image 1:
+
+<img width="1440" alt="Screen Shot 2023-07-10 at 8 11 38 AM" src="https://github.com/eissamonet/Work-Day-Scheduler/assets/133728858/2489b248-c4fc-4fd7-8a2b-7a79ed40d8e5">
 
 
+
+
+
+
+- Image 2:
+  
 <img width="1440" alt="Screen Shot 2023-07-10 at 12 46 21 PM" src="https://github.com/eissamonet/Work-Day-Scheduler/assets/133728858/15012a31-f73a-4c70-9873-4c6171c9988a">
 
 
