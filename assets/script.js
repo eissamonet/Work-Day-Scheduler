@@ -36,7 +36,7 @@ $('.time-div').each(function () {
 // local storage.
 $('.saveBtn').on('click', function (event) {
   event.preventDefault();
-  var value = $(this).siblings('.time-block').val();
+  var value = $(this).siblings('.description').val();
   var time = $(this).parent().attr('id').split('-')[1];
   localStorage.setItem(time,value);
 });
@@ -44,13 +44,13 @@ $('.saveBtn').on('click', function (event) {
 
 // TODO: Add code to get any user input that was saved in localStorage and set
 // the values of the corresponding textarea elements.
-$('#hour-09'.time-block).val(localStorage.getItem('09'));
-$('#hour-10'.time-block).val(localStorage.getItem('10'));
-$('#hour-11'.time-block).val(localStorage.getItem('11'));
-$('#hour-12'.time-block).val(localStorage.getItem('12'));
-$('#hour-13'.time-block).val(localStorage.getItem('13'));
-$('#hour-14'.time-block).val(localStorage.getItem('14'));
-$('#hour-15'.time-block).val(localStorage.getItem('15'));
-$('#hour-16'.time-block).val(localStorage.getItem('16'));
-$('#hour-17'.time-block).val(localStorage.getItem('17'));
+$('#hour-09 .description').val(localStorage.getItem('09'));
+$('#hour-10 .description').val(localStorage.getItem('10'));
+$('#hour-11 .description').val(localStorage.getItem('11'));
+$('#hour-12 .description').val(localStorage.getItem('12'));
+$('#hour-13 .description').val(localStorage.getItem('13'));
+$('#hour-14 .description').val(localStorage.getItem('14'));
+$('#hour-15 .description').val(localStorage.getItem('15'));
+$('#hour-16 .description').val(localStorage.getItem('16'));
+$('#hour-17 .description').val(localStorage.getItem('17'));
 
