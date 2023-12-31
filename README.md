@@ -7,7 +7,7 @@ The Work Day Scheduler allows a user to enter and save events for each hour of a
 
 ## Installation
 
-The application will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. 
+The application will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. You can access the application with the following link: https://eissamonet.github.io/Work-Day-Scheduler/.
 
 ## Usage
 
